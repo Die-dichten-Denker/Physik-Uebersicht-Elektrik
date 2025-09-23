@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+
+\usepackage{times}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{chemfig}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0,6pt}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+
+\title{\Huge{Organische Chemie\\Lernzettel}}
+\date{\today}
+\author{\quad\\Baden, Julian\\Hagemann, Florian\\\quad\\Gymnasium Mellendorf\\ABI Jahr 2027}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+\tableofcontents \thispagestyle{empty}
+\newpage
+\pagenumbering{arabic}
+
+%________________________________________________________________________________________________
+
+\section{1}
+
+
+\end{document}
