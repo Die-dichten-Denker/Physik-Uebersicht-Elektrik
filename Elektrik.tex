@@ -16,7 +16,8 @@
 
 \title{\Huge{Elektrik\\Lernzettel}}
 \date{\today}
-\author{\quad\\Baden, Julian\\Hagemann, Florian\\\quad\\Gymnasium Mellendorf\\ABI Jahr 2027}
+\author{\quad\\Baden, Julian\\\quad\\Gymnasium Mellendorf\\ABI Jahr 2027}
+
 
 \begin{document}
 
@@ -35,7 +36,7 @@
 \begin{center}
     \begin{tabular}{ p{4cm} p{4cm} p{4cm} }
          Stromstärke            & $I$           & $A$                 \\[0,5cm]
-         Ladung                 & $Q$ ($q$ für eine Probeladung)  & $C$ \\[0,5cm]
+         Ladung                 & $Q / q$  		& $C$ 			      \\[0,5cm]
          Spannung               & $U$           & $V$                 \\[0,5cm]
          Wiederstand            & $R$           & $\Omega$            \\[0,5cm]
          el. Feldstärke         & $\vec{E}$     & $\dfrac{N}{C}$      \\[0,5cm]
@@ -45,19 +46,47 @@
 \end{center}
 
 
+\subsection{Zehnerpotenzen}
+\begin{center}
+    \begin{tabular}{ p{4cm} p{4cm} p{4cm} }
+		Terra & T & $10^{12}$ \\[0,5cm]
+		Giga & G & $10^9$ \\[0,5cm]
+		Mega & M & $10^6$ \\[0,5cm]
+		Kilo & k & $10^3$ \\[0,5cm]
+		(Hekto) & (h) & $10^2$ \\ [0,5cm]
+			\hline \\[0,2cm]
+		(Zenti) & (c) & ($10^{-2}$) \\[0,5cm]
+		Mili & m & $10^{-3}$ \\[0,5cm]
+		Mikro & µ & $10^{-6}$ \\[0,5cm]
+		Nano & n & $10^{-9}$ \\[0,5cm]
+		Piko & p & $10^{-12}$ \\[1cm]
+    \end{tabular}
+\end{center}
+
+
+
 \subsection{Formeln}
-\paragraph{Stromstärke}
-\large{$$I = \dfrac{Q}{t}$$}
 
-\paragraph{Spannung}
-\large{$$U = R \cdot I$$}
+\renewcommand{\arraystretch}{4}
+\begin{tabular}{p{6cm} p{10cm}}
+	Stromstärke																	& $I = \dfrac{Q}{t}$\\
+	Spannung																	& $U = R \cdot I  \qquad U = \dfrac{W}{q}  \qquad U = \vec{E} \cdot d$\\
+	Elektrische Feldstärke														& $\vec{E} = \dfrac{\vec{F}}{q}$ \qquad $\vec{E} = \dfrac{\vec{U}}{d}$\qquad \small(Im homogenen el. Feld)\\
+	Energie im homogenen el. Feld												& $W = q \cdot \vec{E} \cdot d$\\
+	Flächenladungsdichte														& $\sigma = \epsilon_0 \cdot \epsilon_r \cdot \vec{E}$\\
+	Coulombsches Gesetz															& $F = \dfrac{1}{4 \pi \epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2}$\\
+	Kapazität																	& $C = \dfrac{Q}{U} \qquad\qquad C = \epsilon_0 \cdot \epsilon_r \cdot \dfrac{A}{D}$\\
+	Geschwindigkeit eines Ladungsträgers nach dem Durchlauf eines el. Feldes	& $v = \sqrt{\dfrac{2 \cdot q \cdot U}{m}}$\\
+	Ablenkung eine Ladungsträgers nach dem Durchlauf eines el. Feldes			& $Y_1 = \dfrac{q \cdot U_y \cdot l^2}{2 \cdot m \cdot d \cdot v_x ^2}$\\
+	Energie im Kondensator														& $W = \frac{1}{2} \cdot Q \cdot U^2$\\
+	Kirchhoff‘sche Knotenregel													& $\sum{I_{zuflie"send}} = \sum{I_{abflie"send}}$\\
+	Kirchhoff‘sche Maschenregel													& $U_{Spannungsquelle} = U_1  +  U_2 + \dots + U_n$\\
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+\\\\
 
 
-
-
-\section{Schaltungen}
-\subsection{Schaltungen von Widerständen}
-
+\subsubsection{Schaltungen von Widerständen}
 \paragraph{Reihe}
 
 \begin{center}
@@ -80,23 +109,14 @@
 \end{center}
 
 
-\paragraph{Kirchhoff‘schen Gesetze (Bei Knotenpunkten)}
 
-\begin{center}
-    \Large 
-        $\sum{I_{zufließend}} = \sum{I_{abfließend}}$\\[1cm]
-    \normalsize
-\end{center}
-
-
-
-\subsection{Schaltungen von Kondensatoren}
+\subsubsection{Schaltungen von Kondensatoren}
 
 \paragraph{Reihe}
 
 \begin{center}
 	\Large
-		$Q_{ges} = Q_1 + Q_2 + … + Q_n$\\[0,5cm]
+		$Q_{ges} = Q_1 = Q_2 = … = Q_n$\\[0,5cm]
 		$U_{ges} = U_1 + U_2 + … + U_n$\\[0,5cm]
 		$\dfrac{1}{C_{ges}} = \dfrac{1}{C_1} + \dfrac{1}{C_2} + … + \dfrac{1}{C_n}$\\[1cm]
 	\normalsize
@@ -112,6 +132,8 @@
 		$C_{ges} = C_1 + C_2 + … + C_n$\\[1cm]
 	\normalsize
 \end{center}
+
+\newpage \normalsize
 
 
 \section{Elektrische Felder}
@@ -137,8 +159,8 @@ Feldlinien führen immer von + zu -.
 \end{figure}
 
 
-
-\subsubsection{Homologe Felder}
+\newpage
+\subsection{Homologe Felder}
 Zwischen zwei Kondensatorplatten herrscht ein homologes Feld. Zwischen ihnen verlaufen die feldlinien
 direkt von + zu -. An den Randbereichen des Kondensators sind die Feldlinien gewölbt.
 
@@ -159,19 +181,20 @@ zur Ladung der Probeladung ($q$). Somit ergibt sich:
 
 
 
-
-\subsubsection{Energie im homogenen elektrischen Feld}
+\newpage
+\subsection{Energie im homogenen elektrischen Feld}
 Wenn sich eine Probeladung duch ein \textbf{homologes elektrisches Feld}, von einer Seite zur Anderen,
 bewegt werden soll, wird eine Energie ($W$) benötigt. Diese berechnet sich durch:
 
-\Large$$W = q \cdot \vec{E} \cdot d$$\normalsize\\
+\Large$$W = q \cdot \vec{E} \cdot d$$\normalsize
 
 \begin{center}
-	oder
+	\vspace{0,4cm}oder
 \end{center}
+
 \Large$$U = \dfrac{W}{q} = \vec{E} \cdot d$$\normalsize\\
 
-Daraus ergibt sich für die \textbf{elektrische Feldstärke im homogenen elektrischen Feld}:
+Die \textbf{elektrische Feldstärke im homogenen elektrischen Feld} errechnet sich durch:
 
 \Large$$\vec{E} = \dfrac{U}{d}$$\normalsize\\
 
@@ -201,6 +224,9 @@ der Ladungen wieder. Diese Kraft lässt sich wie folgt brechnen:\\
 
 
 
+
+
+
 \section{Kondensatoren}
 \subsection{Kapazität}
 
@@ -216,7 +242,74 @@ Dielektrikum:\\
 
 
 
+\newpage
+\subsection{Bewegung von Ladungsträgern im elektrischen Feldern}
+\subsubsection{Parallel zu den Feldlinien}
 
+Wenn sich ein Ladungsträger parallel zu den Feldlinien bewegt, erfährt er eine Kraft ($F$) von $F = q \cdot E$.
+Bei einer Bewegung über den gesamten Abstand der Kondensatorplatten gilt für die erhaltene Energie:
+$W_a = F \cdot d = q \cdot E \cdot d = q \cdot U$\\
+Da $W_{el} = W_(kin)$ gilt, ergibt sich für die Geschwindigkeit ($v$) nach Durchlauf des elektrischen
+Feldes:\\
+\begin{align*}
+	\small \frac{1}{2}m \cdot v^2 &= q \cdot U\\
+	 &\Updownarrow\\
+	\Large v &= \sqrt{\dfrac{2qU}{m}}\\ \normalsize
+\end{align*}
+
+
+
+\subsubsection{Quer zu den Feldlinien}
+
+Nehmen wir an ein Ladungsträger passiert, wie in einer Braun'schen Röhre ein Elektron, ein Elektrischen Feld
+quer zur Feldrichtung. Dann bewegt sich der Ladungsträger in x-Richtung mit konstanter Geschwindigkeit
+($v_x = v_0 = \text{konstant}$). In y-Richtung wird die Ladung in Richtung des Pols mit entgegengesetzter Ladung
+beschleunigt. Die y-Koordinate in Abhängigkeit zu x ist demnach:\\ $$y(x) = \dfrac{q \cdot U_y}{2 \cdot m \cdot d \cdot v_x ^2} \cdot x^2$$\\
+
+Interessanter, z.B. auch für die bereits erwähnten Braun'schen Röhren, ist allerdings die Ablenkung des Ladungsträgers
+nach Durchlauf der Gesamtlänge $l$:\\
+
+\Large$$Y_1 = \dfrac{q \cdot U_y \cdot l^2}{2 \cdot m \cdot d \cdot v_x ^2}$$\\ \normalsize
+
+
+
+\newpage
+\subsection{Energie im Kondensator}
+
+Für die Energie im Kondensator gilt:\\
+
+$$W = \frac{1}{2} \cdot Q \cdot U$$\\
+
+Und da $Q = C \cdot U$ gilt, ergibt sich:
+
+\Large$$W = \frac{1}{2} \cdot C \cdot U^2$$\\ \normalsize
+
+
+
+
+
+\section{Kirchhoff‘sche Regel}
+\subsection{Kirchhoff‘sche Knotenregel}
+Die Kirchhoff‘sche Knotenregel besagt, dass die zufließende Stromstärke in einen Knotenpunkt gleich der
+Ausfließenden ist.
+
+\begin{center}
+    \Large 
+        $\sum{I_{zuflie"send}} = \sum{I_{abflie"send}}$\\[1cm]
+    \normalsize
+\end{center}
+
+
+\subsection{Kirchhoff‘sche Maschenregel}
+Verfolgt man einen Stromweg von dem einen Pol zum anderen Pol, so ist die Summe der
+Teilspannungen gleich der Spannung der Quelle:
+
+
+\begin{center}
+    \Large 
+        $U_{Spannungsquelle} = U_1 \quad + \quad U_2 \quad + \quad \dots \quad + \quad U_n$\\[1cm]
+    \normalsize
+\end{center}
 
 
 
