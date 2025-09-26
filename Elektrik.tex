@@ -71,12 +71,12 @@
 \begin{tabular}{p{6cm} p{10cm}}
 	Stromstärke																	& $I = \dfrac{Q}{t}$\\
 	Spannung																	& $U = R \cdot I  \qquad U = \dfrac{W}{q}  \qquad U = \vec{E} \cdot d$\\
-	Elektrische Feldstärke														& $\vec{E} = \dfrac{\vec{F}}{q}$ \qquad $\vec{E} = \dfrac{\vec{U}}{d}$\qquad \small(Im homogenen el. Feld)\\
+	Elektrische Feldstärke														& $\vec{E} = \dfrac{\vec{F}}{q}$ \qquad $\vec{E} = \dfrac{U}{d}$\qquad \small(Im homogenen el. Feld)\\
 	Energie im homogenen el. Feld												& $W = q \cdot \vec{E} \cdot d$\\
 	Flächenladungsdichte														& $\sigma = \epsilon_0 \cdot \epsilon_r \cdot \vec{E}$\\
 	Coulombsches Gesetz															& $F = \dfrac{1}{4 \pi \epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2}$\\
-	Kapazität																	& $C = \dfrac{Q}{U} \qquad\qquad C = \epsilon_0 \cdot \epsilon_r \cdot \dfrac{A}{D}$\\
-	Geschwindigkeit eines Ladungsträgers nach dem Durchlauf eines el. Feldes	& $v = \sqrt{\dfrac{2 \cdot q \cdot U}{m}}$\\
+	Kapazität																	& $C = \dfrac{Q}{U} \qquad\qquad C = \epsilon_0 \cdot \epsilon_r \cdot \dfrac{A}{d}$\\
+	Geschwindigkeit eines Ladungsträgers nach dem Durchlauf eines el. Feldes	& $\vec{v} = \sqrt{\dfrac{2 \cdot q \cdot U}{m}}$\\
 	Ablenkung eine Ladungsträgers nach dem Durchlauf eines el. Feldes			& $Y_1 = \dfrac{q \cdot U_y \cdot l^2}{2 \cdot m \cdot d \cdot v_x ^2}$\\
 	Energie im Kondensator														& $W = \frac{1}{2} \cdot Q \cdot U^2$\\
 	Kirchhoff‘sche Knotenregel													& $\sum{I_{zuflie"send}} = \sum{I_{abflie"send}}$\\
@@ -204,13 +204,13 @@ Die \textbf{elektrische Feldstärke im homogenen elektrischen Feld} errechnet si
 
 Die Flächenladungsdichte ($\sigma$) ist definiert als Ladung pro Fläche. Somit gilt:$\sigma = \dfrac{Q}{A}$.\\
 Mit dem proportionalitätsfaktor $\epsilon_0 (8,85\cdot10^{-12}\dfrac{As}{Vm}) \quad (\dfrac{As}{Vm} = \dfrac{C^2}{Nm^2})$ ergibt sich:\\
-\Large$$\sigma = \epsilon_0 \cdot E$$\\ \normalsize
+\Large$$\sigma = \epsilon_0 \cdot \vec{E}$$\\ \normalsize
 
 \textbf{Nur im Plattenkondensator} gilt außerdem:\\
 \Large$$\sigma = \epsilon_0 \cdot \dfrac{U}{d}$$\\ \normalsize
 
 Beim der Verwendung eines Dielektrikums gilt:\\
-\Large$$\sigma \quad=\quad \epsilon_0 \cdot \epsilon_r \cdot \dfrac{U}{d} \quad=\quad \epsilon_0 \cdot \epsilon_r \cdot E$$\\ \normalsize
+\Large$$\sigma \quad=\quad \epsilon_0 \cdot \epsilon_r \cdot \dfrac{U}{d} \quad=\quad \epsilon_0 \cdot \epsilon_r \cdot \vec{E}$$\\ \normalsize
 
 
 \subsection{Das Coulombsche Gesetz}
@@ -219,7 +219,7 @@ Zwei geladene Körper üben gegenseitig eine Kraft auf einander auf. Diese Kraft
 und antiproportional zum Quadrat ihres Abstands. Die Art der Ladung (positiv/negativ) spiegelt sich im Vorzeichen
 der Ladungen wieder. Diese Kraft lässt sich wie folgt brechnen:\\
 
-\Large$$F = \dfrac{1}{4\pi \epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2}$$\\ \normalsize
+\Large$$\vec{F} = \dfrac{1}{4\pi \epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2}$$\\ \normalsize
 
 
 
@@ -248,13 +248,13 @@ Dielektrikum:\\
 
 Wenn sich ein Ladungsträger parallel zu den Feldlinien bewegt, erfährt er eine Kraft ($F$) von $F = q \cdot E$.
 Bei einer Bewegung über den gesamten Abstand der Kondensatorplatten gilt für die erhaltene Energie:
-$W_a = F \cdot d = q \cdot E \cdot d = q \cdot U$\\
-Da $W_{el} = W_(kin)$ gilt, ergibt sich für die Geschwindigkeit ($v$) nach Durchlauf des elektrischen
+$W_a = \vec{F} \cdot d = q \cdot \vec{E} \cdot d = q \cdot U$\\
+Da $W_{el} = W_{kin}$ gilt, ergibt sich für die Geschwindigkeit ($\vec{v}$) nach Durchlauf des elektrischen
 Feldes:\\
 \begin{align*}
-	\small \frac{1}{2}m \cdot v^2 &= q \cdot U\\
+	\small \frac{1}{2}m \cdot \vec{v^2} &= q \cdot U\\
 	 &\Updownarrow\\
-	\Large v &= \sqrt{\dfrac{2qU}{m}}\\ \normalsize
+	\Large \vec{v} &= \sqrt{\dfrac{2qU}{m}}\\ \normalsize
 \end{align*}
 
 
@@ -263,13 +263,13 @@ Feldes:\\
 
 Nehmen wir an ein Ladungsträger passiert, wie in einer Braun'schen Röhre ein Elektron, ein Elektrischen Feld
 quer zur Feldrichtung. Dann bewegt sich der Ladungsträger in x-Richtung mit konstanter Geschwindigkeit
-($v_x = v_0 = \text{konstant}$). In y-Richtung wird die Ladung in Richtung des Pols mit entgegengesetzter Ladung
-beschleunigt. Die y-Koordinate in Abhängigkeit zu x ist demnach:\\ $$y(x) = \dfrac{q \cdot U_y}{2 \cdot m \cdot d \cdot v_x ^2} \cdot x^2$$\\
+($\vec{v_x} = \vec{v_0} = \text{konstant}$). In y-Richtung wird die Ladung in Richtung des Pols mit entgegengesetzter Ladung
+beschleunigt. Die y-Koordinate in Abhängigkeit zu x ist demnach:\\ $$y(x) = \dfrac{q \cdot U_y}{2 \cdot m \cdot d \cdot \vec{v_x ^2}} \cdot x^2$$\\
 
 Interessanter, z.B. auch für die bereits erwähnten Braun'schen Röhren, ist allerdings die Ablenkung des Ladungsträgers
 nach Durchlauf der Gesamtlänge $l$:\\
 
-\Large$$Y_1 = \dfrac{q \cdot U_y \cdot l^2}{2 \cdot m \cdot d \cdot v_x ^2}$$\\ \normalsize
+\Large$$Y_1 = \dfrac{q \cdot U_y \cdot l^2}{2 \cdot m \cdot d \cdot \vec{v_x ^2}}$$\\ \normalsize
 
 
 
